@@ -1,0 +1,71 @@
+{
+  "id": "2651d5ce-49d7-42c7-8256-262f85b01267",
+  "version": "2.0",
+  "name": "NewSeleniumProject",
+  "url": "http://the-internet.herokuapp.com",
+  "tests": [{
+    "id": "31bceaef-dc48-4bb1-a382-00b89d21185f",
+    "name": "SeleniumTest01",
+    "commands": [{
+      "id": "2f12258e-ac33-4e4e-a0c5-651a07f46f4b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c944d05d-a699-4541-b65f-f44782f34d72",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x980",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f077789e-16d0-4d51-b6ff-7546450e20a1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Drag and Drop",
+      "targets": [
+        ["linkText=Drag and Drop", "linkText"],
+        ["css=li:nth-child(10) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Drag and Drop')]", "xpath:link"],
+        ["xpath=//div[@id='content']/ul/li[10]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/drag_and_drop')]", "xpath:href"],
+        ["xpath=//li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Drag and Drop')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bad5f4cf-8a50-4dc1-bb87-2ccda41a4ecb",
+      "comment": "",
+      "command": "dragAndDropToObject",
+      "target": "id=column-a",
+      "targets": [],
+      "value": "id=column-b"
+    }, {
+      "id": "b975f1a8-efe0-4c3d-8700-151bf3958666",
+      "comment": "",
+      "command": "dragAndDropToObject",
+      "target": "id=column-b",
+      "targets": [],
+      "value": "id=column-a"
+    }]
+  }],
+  "suites": [{
+    "id": "bb4127c1-cf44-48a9-94be-9747e690d1ea",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }, {
+    "id": "afe12da9-45e3-40aa-88c8-3ecd81b6538c",
+    "name": "TestSuite01",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://the-internet.herokuapp.com/"],
+  "plugins": []
+}
